@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
   <!-- Module Federation Integration Diagram -->
 
@@ -20,16 +21,16 @@
   <line x1="100" y1="170" x2="340" y2="170" stroke="#90caf9" stroke-width="1"/>
 
   <text x="110" y="195" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Manages Redux store
+    - Manages Redux store
   </text>
   <text x="110" y="215" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Provides routing
+    - Provides routing
   </text>
   <text x="110" y="235" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Loads remote modules
+    - Loads remote modules
   </text>
   <text x="110" y="255" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Exposes window.GLOBALS
+    - Exposes window.GLOBALS
   </text>
 
   <!-- Remote Module Box (Right) -->
@@ -43,17 +44,27 @@
   <line x1="560" y1="170" x2="800" y2="170" stroke="#a5d6a7" stroke-width="1"/>
 
   <text x="570" y="195" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Registers reducers dynamically
+    - Registers reducers dynamically
   </text>
   <text x="570" y="215" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Exposes components
+    - Exposes components
   </text>
   <text x="570" y="235" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Uses window.GLOBALS API
+    - Uses window.GLOBALS API
   </text>
   <text x="570" y="255" font-family="Arial, sans-serif" font-size="12" fill="#424242">
-    • Shares dependencies
+    - Shares dependencies
   </text>
+
+  <!-- Arrow markers definition (must be before use) -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7b1fa2"/>
+    </marker>
+  </defs>
 
   <!-- Connection Arrow (Host to Module) -->
   <path d="M 360 190 L 540 190" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
@@ -84,7 +95,7 @@
   <!-- Arrow from Host to Store -->
   <path d="M 220 280 L 220 350 L 380 350 L 380 380" stroke="#7b1fa2" stroke-width="2" fill="none" marker-end="url(#arrowPurple)"/>
   <text x="250" y="320" font-family="Arial, sans-serif" font-size="11" fill="#7b1fa2">
-    Creates & owns
+    Creates and owns
   </text>
 
   <!-- Arrow from Module to Store -->
@@ -130,19 +141,19 @@
     Singleton mode (required):
   </text>
   <text x="630" y="470" font-family="Courier New, monospace" font-size="11" fill="#01579b">
-    • react: ^18.3.1
+    react: ^18.3.1
   </text>
   <text x="630" y="490" font-family="Courier New, monospace" font-size="11" fill="#01579b">
-    • react-dom: ^18.3.1
+    react-dom: ^18.3.1
   </text>
   <text x="630" y="510" font-family="Courier New, monospace" font-size="11" fill="#01579b">
-    • @reduxjs/toolkit
+    @reduxjs/toolkit
   </text>
   <text x="630" y="530" font-family="Courier New, monospace" font-size="11" fill="#01579b">
-    • react-redux
+    react-redux
   </text>
   <text x="630" y="550" font-family="Courier New, monospace" font-size="11" fill="#01579b">
-    • @mui/material
+    @mui/material
   </text>
 
   <!-- Exposed Components Note -->
@@ -151,7 +162,7 @@
     Exposed via remoteEntry.js
   </text>
   <text x="735" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f9a825">
-    Components • Layouts • Services
+    Components, Layouts, Services
   </text>
 
   <!-- Configuration Note -->
@@ -160,16 +171,6 @@
     Configuration Files
   </text>
   <text x="165" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d32f2f">
-    bluefiber.config.js • MODULES_EXPOSE.json
+    bluefiber.config.js, MODULES_EXPOSE.json
   </text>
-
-  <!-- Arrow markers definition -->
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
-    </marker>
-    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#7b1fa2"/>
-    </marker>
-  </defs>
 </svg>

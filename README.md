@@ -385,16 +385,31 @@ See [Deployment Guide](./docs/deployment-guide.md) for:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here are some guidelines:
+We welcome contributions! WebKit uses a **Feature Branch Workflow**:
 
-1. **Fork the repository** and create a feature branch
-2. **Write tests** for new functionality
-3. **Follow code style** guidelines (ESLint + Prettier)
-4. **Update documentation** for significant changes
-5. **Run tests** before submitting (`npm run test:jest`)
-6. **Submit a pull request** with a clear description
+### Branching Strategy
 
-For detailed contribution guidelines, consider adding a `CONTRIBUTING.md` file.
+```
+main (production) → Tagged releases
+  └── dev (development) → Active development
+        └── feature/* → New features
+        └── fix/* → Bug fixes
+```
+
+### Quick Start
+
+1. **Fork the repository** and clone your fork
+2. **Create a feature branch** from `dev`: `git checkout -b feature/your-feature`
+3. **Make your changes** and commit with clear messages
+4. **Write tests** for new functionality
+5. **Follow code standards** (ESLint + Prettier)
+6. **Submit a pull request** to the `dev` branch
+
+**📖 See [CONTRIBUTING.md](./CONTRIBUTING.md) for complete guidelines**, including:
+- Detailed branching strategy and workflow
+- Commit message conventions
+- Code standards and testing requirements
+- Pull request process
 
 ---
 

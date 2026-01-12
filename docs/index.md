@@ -108,7 +108,26 @@
 
 ## Getting Started
 
-### For New Developers
+### 🎯 Using WebKit as a Bootstrap
+
+**WebKit is a template** - fork it to build your own application in one of two ways:
+
+- **Path A: Standalone SPA** - Complete, independent web application
+- **Path B: Module Federation Component** - Reusable components for other apps
+
+**👉 [Complete Getting Started Guide](../GETTING-STARTED.md)** - Essential reading before forking WebKit
+
+The getting started guide covers:
+- Choosing between SPA and Module Federation paths
+- Step-by-step forking and setup instructions
+- Build process differences and configuration
+- Integration patterns and deployment
+
+---
+
+### For Developers Working on Existing WebKit Projects
+
+If you're contributing to an existing project built with WebKit:
 
 1. **Read First:**
    - [Project Structure](./project-structure.md) - Understand the codebase layout
@@ -118,8 +137,8 @@
 2. **Set Up Environment:**
    ```bash
    # Clone repository
-   git clone <repo-url> webkit
-   cd webkit
+   git clone <repo-url> your-project
+   cd your-project
 
    # Install dependencies
    npm ci

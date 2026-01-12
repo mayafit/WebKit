@@ -12,7 +12,8 @@ eslint-report.html
 junit.xml
 package-lock.json
 
-# BMAD workflow outputs and state
+# BMAD framework and workflow outputs
+/_bmad/
 /_bmad-output/
 /.agent/
 /.claude/

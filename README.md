@@ -1,4 +1,4 @@
-# WebKit — Starlight Module Bootstrap
+# WebKit — React + TypeScript Bootstrap
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3.1-61dafb.svg)](https://reactjs.org/)
@@ -6,9 +6,32 @@
 [![Material-UI](https://img.shields.io/badge/Material--UI-6.1.10-007FFF.svg)](https://mui.com/)
 [![Webpack](https://img.shields.io/badge/Webpack-5.97.1-8DD6F9.svg)](https://webpack.js.org/)
 
-**A production-ready React + TypeScript bootstrap for building frontend web modules in the Starlight system.**
+**A production-ready React + TypeScript bootstrap for building frontend applications and Module Federation components.**
 
-This repository provides a complete, modern frontend development environment with React 18, TypeScript, Redux Toolkit, Material-UI, and Webpack Module Federation. It includes comprehensive tooling for development, testing, component documentation via Storybook, and automated documentation generation through embedded BMAD workflows.
+WebKit provides a complete, modern frontend development environment with React 18, TypeScript, Redux Toolkit, Material-UI, and Webpack Module Federation. Use it to build standalone SPAs or reusable components that integrate with other applications.
+
+---
+
+## 🎯 Using WebKit
+
+**WebKit is a bootstrap template** - fork it to start your project in one of two ways:
+
+![WebKit Bootstrap Architecture](./webkit-bootstrap-architecture.svg)
+
+### Path A: Standalone SPA
+Fork WebKit to build a complete, independent single-page application with all features included.
+
+### Path B: Module Federation Component
+Fork WebKit to build reusable components that integrate into other applications, sharing Redux store and design system.
+
+**👉 [Read the Complete Getting Started Guide](./GETTING-STARTED.md)**
+
+The getting started guide provides:
+- Detailed instructions for both SPA and Module Federation paths
+- Step-by-step forking and setup procedures
+- Build process explanation and configuration
+- Integration patterns and best practices
+- Optimized for both human and AI-assisted development
 
 ---
 
@@ -134,7 +157,11 @@ Component-based frontend architecture with centralized state management using Re
 - **TypeScript** for type safety and better developer experience
 
 ### Module Federation
-This project is configured for **Webpack Module Federation**, allowing it to expose or consume remote modules as part of the Starlight system architecture. See `MODULES_EXPOSE.json` for exposed modules configuration.
+This project is configured for **Webpack Module Federation**, allowing it to expose or consume remote modules for micro-frontend architecture. Components can be shared across multiple applications while maintaining a unified Redux store.
+
+![Module Federation Integration](./module-federation-integration.svg)
+
+See `MODULES_EXPOSE.json` for exposed modules configuration and [GETTING-STARTED.md](./GETTING-STARTED.md#path-b-building-a-module-federation-component) for complete integration instructions.
 
 ---
 
